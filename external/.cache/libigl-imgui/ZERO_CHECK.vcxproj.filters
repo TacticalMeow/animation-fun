@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\libigl-imgui\CMakeFiles\b7d7761f1fcc4f085eca7fa2048b65fc\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{10EEC081-0F68-3A6B-BD05-2637FF1924C6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

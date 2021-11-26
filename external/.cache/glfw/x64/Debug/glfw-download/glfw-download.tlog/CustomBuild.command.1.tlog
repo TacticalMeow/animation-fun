@@ -1,0 +1,142 @@
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\GLFW\CMAKEFILES\81EA7BCDC3C9B75127DDE6EF333DDCB0\GLFW-DOWNLOAD-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/glfw-download-prefix/tmp/glfw-download-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/Debug/glfw-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\GLFW\CMAKEFILES\81EA7BCDC3C9B75127DDE6EF333DDCB0\GLFW-DOWNLOAD-DOWNLOAD.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/glfw-download-prefix/tmp/glfw-download-download.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/Debug/glfw-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\GLFW\CMAKEFILES\81EA7BCDC3C9B75127DDE6EF333DDCB0\GLFW-DOWNLOAD-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/glfw-download-prefix/tmp/glfw-download-update.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\GLFW\CMAKEFILES\81EA7BCDC3C9B75127DDE6EF333DDCB0\GLFW-DOWNLOAD-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/Debug/glfw-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\GLFW\CMAKEFILES\81EA7BCDC3C9B75127DDE6EF333DDCB0\GLFW-DOWNLOAD-CONFIGURE.RULE
+setlocal
+cd E:\Repositories\Animation_igl_engine_build\bin\glfw-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/Debug/glfw-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\GLFW\CMAKEFILES\81EA7BCDC3C9B75127DDE6EF333DDCB0\GLFW-DOWNLOAD-BUILD.RULE
+setlocal
+cd E:\Repositories\Animation_igl_engine_build\bin\glfw-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/Debug/glfw-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\GLFW\CMAKEFILES\81EA7BCDC3C9B75127DDE6EF333DDCB0\GLFW-DOWNLOAD-INSTALL.RULE
+setlocal
+cd E:\Repositories\Animation_igl_engine_build\bin\glfw-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/Debug/glfw-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\GLFW\CMAKEFILES\81EA7BCDC3C9B75127DDE6EF333DDCB0\GLFW-DOWNLOAD-TEST.RULE
+setlocal
+cd E:\Repositories\Animation_igl_engine_build\bin\glfw-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/Debug/glfw-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\GLFW\CMAKEFILES\D1E604402F1FFDA4BF8960DC730DE524\GLFW-DOWNLOAD-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/Debug/glfw-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/glfw-download-prefix/src/glfw-download-stamp/Debug/glfw-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\GLFW\CMAKEFILES\261C5DDB805661745EEAB1C2E89601CE\GLFW-DOWNLOAD.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\GLFW\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw -BC:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw --check-stamp-file C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,14 @@
+# Target labels
+ stb-download
+# Source files and their labels
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/stb-download
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/d4edf95ac0165946c6cacf09ba3e0ce1/stb-download.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/a5159856adf7ce964dc53614f1fd5071/stb-download-complete.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/b0131cd639bb484cfd695022a98c116a/stb-download-build.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/b0131cd639bb484cfd695022a98c116a/stb-download-configure.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/b0131cd639bb484cfd695022a98c116a/stb-download-download.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/b0131cd639bb484cfd695022a98c116a/stb-download-install.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/b0131cd639bb484cfd695022a98c116a/stb-download-mkdir.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/b0131cd639bb484cfd695022a98c116a/stb-download-patch.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/b0131cd639bb484cfd695022a98c116a/stb-download-test.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/b0131cd639bb484cfd695022a98c116a/stb-download-update.rule

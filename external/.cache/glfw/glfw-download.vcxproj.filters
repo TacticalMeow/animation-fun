@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\glfw\CMakeFiles\81ea7bcdc3c9b75127dde6ef333ddcb0\glfw-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\glfw\CMakeFiles\81ea7bcdc3c9b75127dde6ef333ddcb0\glfw-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\glfw\CMakeFiles\81ea7bcdc3c9b75127dde6ef333ddcb0\glfw-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\glfw\CMakeFiles\81ea7bcdc3c9b75127dde6ef333ddcb0\glfw-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\glfw\CMakeFiles\81ea7bcdc3c9b75127dde6ef333ddcb0\glfw-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\glfw\CMakeFiles\81ea7bcdc3c9b75127dde6ef333ddcb0\glfw-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\glfw\CMakeFiles\81ea7bcdc3c9b75127dde6ef333ddcb0\glfw-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\glfw\CMakeFiles\81ea7bcdc3c9b75127dde6ef333ddcb0\glfw-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\glfw\CMakeFiles\d1e604402f1ffda4bf8960dc730de524\glfw-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\glfw\CMakeFiles\261c5ddb805661745eeab1c2e89601ce\glfw-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\glfw\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\glfw\CMakeFiles\glfw-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A7083031-787B-3517-A0BD-7F0C79658201}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

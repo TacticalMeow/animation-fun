@@ -1,0 +1,142 @@
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKEFILES\A20469120F32968CDF514A343DB44981\LIBIGL-IMGUI-DOWNLOAD-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/libigl-imgui-download-prefix/tmp/libigl-imgui-download-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/libigl-imgui-download-prefix/src/libigl-imgui-download-stamp/Debug/libigl-imgui-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKEFILES\A20469120F32968CDF514A343DB44981\LIBIGL-IMGUI-DOWNLOAD-DOWNLOAD.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/libigl-imgui-download-prefix/tmp/libigl-imgui-download-download.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/libigl-imgui-download-prefix/src/libigl-imgui-download-stamp/Debug/libigl-imgui-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKEFILES\A20469120F32968CDF514A343DB44981\LIBIGL-IMGUI-DOWNLOAD-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/libigl-imgui-download-prefix/tmp/libigl-imgui-download-update.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKEFILES\A20469120F32968CDF514A343DB44981\LIBIGL-IMGUI-DOWNLOAD-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/libigl-imgui-download-prefix/src/libigl-imgui-download-stamp/Debug/libigl-imgui-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKEFILES\A20469120F32968CDF514A343DB44981\LIBIGL-IMGUI-DOWNLOAD-CONFIGURE.RULE
+setlocal
+cd E:\Repositories\Animation_igl_engine_build\bin\libigl-imgui-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/libigl-imgui-download-prefix/src/libigl-imgui-download-stamp/Debug/libigl-imgui-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKEFILES\A20469120F32968CDF514A343DB44981\LIBIGL-IMGUI-DOWNLOAD-BUILD.RULE
+setlocal
+cd E:\Repositories\Animation_igl_engine_build\bin\libigl-imgui-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/libigl-imgui-download-prefix/src/libigl-imgui-download-stamp/Debug/libigl-imgui-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKEFILES\A20469120F32968CDF514A343DB44981\LIBIGL-IMGUI-DOWNLOAD-INSTALL.RULE
+setlocal
+cd E:\Repositories\Animation_igl_engine_build\bin\libigl-imgui-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/libigl-imgui-download-prefix/src/libigl-imgui-download-stamp/Debug/libigl-imgui-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKEFILES\A20469120F32968CDF514A343DB44981\LIBIGL-IMGUI-DOWNLOAD-TEST.RULE
+setlocal
+cd E:\Repositories\Animation_igl_engine_build\bin\libigl-imgui-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/libigl-imgui-download-prefix/src/libigl-imgui-download-stamp/Debug/libigl-imgui-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKEFILES\29FF4565EB45B639D3F764BAB6FA988C\LIBIGL-IMGUI-DOWNLOAD-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/Debug/libigl-imgui-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/libigl-imgui-download-prefix/src/libigl-imgui-download-stamp/Debug/libigl-imgui-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKEFILES\B7D7761F1FCC4F085ECA7FA2048B65FC\LIBIGL-IMGUI-DOWNLOAD.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui -BC:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui --check-stamp-file C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

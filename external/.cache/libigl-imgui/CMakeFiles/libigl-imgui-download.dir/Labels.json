@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/libigl-imgui-download"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/b7d7761f1fcc4f085eca7fa2048b65fc/libigl-imgui-download.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/29ff4565eb45b639d3f764bab6fa988c/libigl-imgui-download-complete.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/a20469120f32968cdf514a343db44981/libigl-imgui-download-build.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/a20469120f32968cdf514a343db44981/libigl-imgui-download-configure.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/a20469120f32968cdf514a343db44981/libigl-imgui-download-download.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/a20469120f32968cdf514a343db44981/libigl-imgui-download-install.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/a20469120f32968cdf514a343db44981/libigl-imgui-download-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/a20469120f32968cdf514a343db44981/libigl-imgui-download-patch.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/a20469120f32968cdf514a343db44981/libigl-imgui-download-test.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/libigl-imgui/CMakeFiles/a20469120f32968cdf514a343db44981/libigl-imgui-download-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libigl-imgui-download"
+		],
+		"name" : "libigl-imgui-download"
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/glfw-download"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/261c5ddb805661745eeab1c2e89601ce/glfw-download.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/d1e604402f1ffda4bf8960dc730de524/glfw-download-complete.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-build.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-configure.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-download.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-install.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-patch.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-test.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-download"
+		],
+		"name" : "glfw-download"
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/glad-download"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/5c5fce5efe69eae64f3c3f0181e70d96/glad-download.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/b136170206f7b695b87458e2296dfef4/glad-download-complete.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/7335617cb5f8cbcbd65a20fb9587447f/glad-download-build.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/7335617cb5f8cbcbd65a20fb9587447f/glad-download-configure.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/7335617cb5f8cbcbd65a20fb9587447f/glad-download-download.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/7335617cb5f8cbcbd65a20fb9587447f/glad-download-install.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/7335617cb5f8cbcbd65a20fb9587447f/glad-download-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/7335617cb5f8cbcbd65a20fb9587447f/glad-download-patch.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/7335617cb5f8cbcbd65a20fb9587447f/glad-download-test.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glad/CMakeFiles/7335617cb5f8cbcbd65a20fb9587447f/glad-download-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glad-download"
+		],
+		"name" : "glad-download"
+	}
+}

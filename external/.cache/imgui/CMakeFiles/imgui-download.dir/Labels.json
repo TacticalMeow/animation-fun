@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/imgui/CMakeFiles/imgui-download"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/imgui/CMakeFiles/f9825a0e460fe61951a005c576186c27/imgui-download.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/imgui/CMakeFiles/ac9b62c2a7ebdee7e29dfef7fcd620a4/imgui-download-complete.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/imgui/CMakeFiles/c744c97900693ad36f782362f83399da/imgui-download-build.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/imgui/CMakeFiles/c744c97900693ad36f782362f83399da/imgui-download-configure.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/imgui/CMakeFiles/c744c97900693ad36f782362f83399da/imgui-download-download.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/imgui/CMakeFiles/c744c97900693ad36f782362f83399da/imgui-download-install.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/imgui/CMakeFiles/c744c97900693ad36f782362f83399da/imgui-download-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/imgui/CMakeFiles/c744c97900693ad36f782362f83399da/imgui-download-patch.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/imgui/CMakeFiles/c744c97900693ad36f782362f83399da/imgui-download-test.rule"
+		},
+		{
+			"file" : "C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/imgui/CMakeFiles/c744c97900693ad36f782362f83399da/imgui-download-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"imgui-download"
+		],
+		"name" : "imgui-download"
+	}
+}

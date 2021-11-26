@@ -1,0 +1,10 @@
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\STB\CMAKEFILES\D4EDF95AC0165946C6CACF09BA3E0CE1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb -BC:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/stb-download.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

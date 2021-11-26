@@ -1,0 +1,14 @@
+# Target labels
+ glfw-download
+# Source files and their labels
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/glfw-download
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/261c5ddb805661745eeab1c2e89601ce/glfw-download.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/d1e604402f1ffda4bf8960dc730de524/glfw-download-complete.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-build.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-configure.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-download.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-install.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-mkdir.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-patch.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-test.rule
+C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/glfw/CMakeFiles/81ea7bcdc3c9b75127dde6ef333ddcb0/glfw-download-update.rule

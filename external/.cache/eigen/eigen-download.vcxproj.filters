@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\eigen\CMakeFiles\79b861f48bd3fcc9937524531fd53692\eigen-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\eigen\CMakeFiles\79b861f48bd3fcc9937524531fd53692\eigen-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\eigen\CMakeFiles\79b861f48bd3fcc9937524531fd53692\eigen-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\eigen\CMakeFiles\79b861f48bd3fcc9937524531fd53692\eigen-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\eigen\CMakeFiles\79b861f48bd3fcc9937524531fd53692\eigen-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\eigen\CMakeFiles\79b861f48bd3fcc9937524531fd53692\eigen-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\eigen\CMakeFiles\79b861f48bd3fcc9937524531fd53692\eigen-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\eigen\CMakeFiles\79b861f48bd3fcc9937524531fd53692\eigen-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\eigen\CMakeFiles\ac31ce9d629ec50f7a3f4b6e0b8db21a\eigen-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\eigen\CMakeFiles\356cef2d8614e9b3143d899140837b2f\eigen-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\eigen\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\edens\source\repos\tamirgrBGU\EngineForAnimationCourse-master\external\.cache\eigen\CMakeFiles\eigen-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5383B419-F08E-3EE9-B3EB-C2C620AE29DE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

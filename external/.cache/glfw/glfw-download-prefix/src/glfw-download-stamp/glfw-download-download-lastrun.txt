@@ -1,0 +1,5 @@
+method=git
+repository=https://github.com/glfw/glfw.git
+remote=origin
+source_dir=C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/cmake/../external/glfw
+

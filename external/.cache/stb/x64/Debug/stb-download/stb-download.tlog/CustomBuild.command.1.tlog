@@ -1,0 +1,142 @@
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\STB\CMAKEFILES\B0131CD639BB484CFD695022A98C116A\STB-DOWNLOAD-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/stb-download-prefix/tmp/stb-download-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/Debug/stb-download-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\STB\CMAKEFILES\B0131CD639BB484CFD695022A98C116A\STB-DOWNLOAD-DOWNLOAD.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/stb-download-prefix/tmp/stb-download-download.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/Debug/stb-download-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\STB\CMAKEFILES\B0131CD639BB484CFD695022A98C116A\STB-DOWNLOAD-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/stb-download-prefix/tmp/stb-download-update.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\STB\CMAKEFILES\B0131CD639BB484CFD695022A98C116A\STB-DOWNLOAD-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/Debug/stb-download-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\STB\CMAKEFILES\B0131CD639BB484CFD695022A98C116A\STB-DOWNLOAD-CONFIGURE.RULE
+setlocal
+cd E:\Repositories\Animation_igl_engine_build\bin\stb-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/Debug/stb-download-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\STB\CMAKEFILES\B0131CD639BB484CFD695022A98C116A\STB-DOWNLOAD-BUILD.RULE
+setlocal
+cd E:\Repositories\Animation_igl_engine_build\bin\stb-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/Debug/stb-download-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\STB\CMAKEFILES\B0131CD639BB484CFD695022A98C116A\STB-DOWNLOAD-INSTALL.RULE
+setlocal
+cd E:\Repositories\Animation_igl_engine_build\bin\stb-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/Debug/stb-download-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\STB\CMAKEFILES\B0131CD639BB484CFD695022A98C116A\STB-DOWNLOAD-TEST.RULE
+setlocal
+cd E:\Repositories\Animation_igl_engine_build\bin\stb-build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/Debug/stb-download-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\STB\CMAKEFILES\A5159856ADF7CE964DC53614F1FD5071\STB-DOWNLOAD-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/Debug/stb-download-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/Debug/stb-download-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\STB\CMAKEFILES\D4EDF95AC0165946C6CACF09BA3E0CE1\STB-DOWNLOAD.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\EDENS\SOURCE\REPOS\TAMIRGRBGU\ENGINEFORANIMATIONCOURSE-MASTER\EXTERNAL\.CACHE\STB\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb -BC:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb --check-stamp-file C:/Users/edens/source/repos/tamirgrBGU/EngineForAnimationCourse-master/external/.cache/stb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
