@@ -746,31 +746,123 @@ void igl::opengl::ViewerData::set_original_vf(const Eigen::MatrixXd& V, const Ei
 // Function to reset original mesh and data structures
 void igl::opengl::ViewerData::reset_collapsing_data(bool first_time)
 {
-    EQ = std::vector<std::set<std::pair<double, int> >::iterator >(E.rows());
-    Q.clear();
-    edge_flaps(OF, E, EMAP, EF, EI);
-    C.resize(E.rows(), OV.cols());
-    Eigen::VectorXd costs(E.rows());
-    for (int e = 0; e < E.rows(); e++)
-    {
-        double cost = e;
-        Eigen::RowVectorXd p(1, 3);
-        shortest_edge_and_midpoint(e, OV, OF, E, EMAP, EF, EI, cost, p);
-        C.row(e) = p;
-        costs(e) = cost;
-        EQ.push_back(Q.insert(std::pair<double, int>(cost, e)).first);
-    }
-    num_collapsed = 0;
     if (!first_time)
     {
         clear();
         set_mesh(OV, OF);
     }
+
+    const auto& qslim_optimal = [&](
+        const int e,
+        const Eigen::MatrixXd& V,
+        const Eigen::MatrixXi& /*F*/,
+        const Eigen::MatrixXi& E,
+        const Eigen::VectorXi& /*EMAP*/,
+        const Eigen::MatrixXi& /*EF*/,
+        const Eigen::MatrixXi& /*EI*/,
+        double& cost,
+        Eigen::RowVectorXd& p)
+    {
+        // Then we just collapsed (v1,v2)
+        if (v1 >= 0 && v2 >= 0)
+        {
+            plus(quadrics[v1], quadrics[v2], quadrics[v1 < v2 ? v1 : v2]);
+            v1 = -1;
+            v2 = -1;
+        }
+        // Combined quadric
+        Quadric quadric_p;
+        plus(quadrics[E(e, 0)], quadrics[E(e, 1)], quadric_p);
+        // Quadric: p'Ap + 2b'p + c
+        // optimal point: Ap = -b, or rather because we have row vectors: pA=-b
+        const auto& A = std::get<0>(quadric_p);
+        const auto& b = std::get<1>(quadric_p);
+        const auto& c = std::get<2>(quadric_p);
+        p = -b * A.inverse();
+        cost = p.dot(p * A) + 2 * p.dot(b) + c;
+    };
+
+    const int dim = V.cols();
+    // Quadrics per face
+    std::vector<Quadric> face_quadrics(F.rows());
+    // Initialize each vertex quadric to zeros
+    quadrics.resize(
+        V.rows(), { Eigen::MatrixXd::Zero(dim,dim),Eigen::RowVectorXd::Zero(dim),0 });
+    Eigen::MatrixXd I = Eigen::MatrixXd::Identity(dim, dim);
+    // Rather initial with zeros, initial with a small amount of energy pull
+    // toward original vertex position
+    const double w = 1e-10;
+    for (int v = 0; v < V.rows(); v++)
+    {
+        std::get<0>(quadrics[v]) = w * I;
+        Eigen::RowVectorXd Vv = V.row(v);
+        std::get<1>(quadrics[v]) = w * -Vv;
+        std::get<2>(quadrics[v]) = w * Vv.dot(Vv);
+    }
+
+    //Clean and rebuild all the Edge data (recalculate original edge costs and put in queue).
+    int v1 = -1;
+    int v2 = -1;
+    EQ.clear();
+    EQ.resize(E.rows());
+    Q.clear();
+    edge_flaps(OF, E, EMAP, EF, EI);
+    C.resize(E.rows(), OV.cols());
+    for (int e = 0; e < E.rows(); e++)
+    {
+        double cost = e;
+        Eigen::RowVectorXd p(1, 3);
+        qslim_optimal(e, V, F, E, EMAP, EF, EI, cost, p);
+        C.row(e) = p;
+        EQ.push_back(Q.insert(std::pair<double, int>(cost, e)).first);
+    }
+    num_collapsed = 0;
+
     //set_face_based(true);
+}
+
+void igl::opengl::ViewerData::plus(const Quadric & a, const Quadric & b, Quadric & c)
+{
+    std::get<0>(c) = (std::get<0>(a) + std::get<0>(b)).eval();
+    std::get<1>(c) = (std::get<1>(a) + std::get<1>(b)).eval();
+    std::get<2>(c) = (std::get<2>(a) + std::get<2>(b));
 };
+
+
+
 
 bool igl::opengl::ViewerData::collapse_shape_edges(float collapse_percentage)
 {
+    const auto& qslim_optimal = [&](
+        const int e,
+        const Eigen::MatrixXd& V,
+        const Eigen::MatrixXi& /*F*/,
+        const Eigen::MatrixXi& E,
+        const Eigen::VectorXi& /*EMAP*/,
+        const Eigen::MatrixXi& /*EF*/,
+        const Eigen::MatrixXi& /*EI*/,
+        double& cost,
+        Eigen::RowVectorXd& p)
+    {
+        // Then we just collapsed (v1,v2)
+        if (v1 >= 0 && v2 >= 0)
+        {
+            plus(quadrics[v1], quadrics[v2], quadrics[v1 < v2 ? v1 : v2]);
+            v1 = -1;
+            v2 = -1;
+        }
+        // Combined quadric
+        Quadric quadric_p;
+        plus(quadrics[E(e, 0)], quadrics[E(e, 1)], quadric_p);
+        // Quadric: p'Ap + 2b'p + c
+        // optimal point: Ap = -b, or rather because we have row vectors: pA=-b
+        const auto& A = std::get<0>(quadric_p);
+        const auto& b = std::get<1>(quadric_p);
+        const auto& c = std::get<2>(quadric_p);
+        p = -b * A.inverse();
+        cost = p.dot(p * A) + 2 * p.dot(b) + c;
+    };
+
     if (!Q.empty())
     {
         bool something_collapsed = false;
@@ -780,7 +872,7 @@ bool igl::opengl::ViewerData::collapse_shape_edges(float collapse_percentage)
         const int max_iter =  std::ceil(collapse_percentage * Q.size());
         for (int j = 0; j < max_iter; j++)
         {
-            if (!collapse_edge(shortest_edge_and_midpoint, V, F, E, EMAP, EF, EI, Q, EQ, C))
+            if (!collapse_edge(qslim_optimal, V, F, E, EMAP, EF, EI, Q, EQ, C))
             {
                 break;
             }

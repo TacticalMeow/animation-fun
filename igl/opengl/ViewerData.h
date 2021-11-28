@@ -177,6 +177,13 @@ public:
   Eigen::MatrixXi OF;
   Eigen::VectorXi EMAP;
   Eigen::MatrixXi E, EF, EI;
+  int v1, v2;
+  // Quadrics per vertex
+  typedef std::tuple<Eigen::MatrixXd, Eigen::RowVectorXd, double> Quadric;
+  std::vector<Quadric> quadrics;
+
+
+
   // If an edge were collapsed, we'd collapse it to these points:
   Eigen::MatrixXd C;
   int num_collapsed;
@@ -186,6 +193,7 @@ public:
   void set_original_vf(const Eigen::MatrixXd& V, const Eigen::MatrixXi& F);
   bool collapse_shape_edges(float collapse_percentage);
   void decimate_edges();
+  void plus(const Quadric& a, const Quadric& b, Quadric& c);
 
 
 
