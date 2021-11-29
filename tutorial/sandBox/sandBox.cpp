@@ -27,16 +27,17 @@ void SandBox::Init(const std::string &config)
 		while (nameFileout >> item_name)
 		{
 			std::cout << "openning " << item_name << std::endl;
-			load_mesh_from_file(item_name);
-			data().image_texture("E:/Repositories/Animation_igl_engine_build/bin/textures/snake1.png");
-			parents.push_back(-1);
-			data().add_points(Eigen::RowVector3d(0, 0, 0), Eigen::RowVector3d(0, 0, 1));
-			data().show_overlay_depth = false;
-			data().point_size = 10;
-			data().line_width = 2;
-			data().set_visible(false, 1);
-			//Eden Mansdorf
-			data().reset_collapsing_data(true);
+			if (load_mesh_from_file(item_name))
+			{
+				data().image_texture("E:/Repositories/Animation_igl_engine_build/bin/textures/snake1.png");
+				parents.push_back(-1);
+				data().add_points(Eigen::RowVector3d(0, 0, 0), Eigen::RowVector3d(0, 0, 1));
+				data().show_overlay_depth = false;
+				data().point_size = 10;
+				data().line_width = 2;
+				data().set_visible(false, 1);
+				data().reset_collapsing_data();
+			}
 		}
 		nameFileout.close();
 	}
@@ -55,9 +56,6 @@ void SandBox::Animate()
 {
 	if (isActive)
 	{
-		
-		data().collapse_shape_edges(0.1f);
-		isActive = false;
 	}
 }
 

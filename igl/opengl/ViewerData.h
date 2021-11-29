@@ -173,8 +173,8 @@ public:
   Eigen::MatrixXi F_uv; // optional faces for UVs
 
   //Structures for edge decimation (Eden Mansdorf).
-  Eigen::MatrixXd OV,V_alt;
-  Eigen::MatrixXi OF,F_alt;
+  Eigen::MatrixXd OV;
+  Eigen::MatrixXi OF;
   Eigen::VectorXi EMAP;
   Eigen::MatrixXi E, EF, EI;
   int v1, v2;
@@ -188,8 +188,8 @@ public:
   Eigen::MatrixXd C;
   int num_collapsed;
   std::set<std::pair<double, int>> Q;
-  std::vector<std::set<std::pair<double, int> >::iterator > EQ;
-  void reset_collapsing_data(bool first_time);
+  std::vector<std::set<std::pair<double,int>>::iterator > EQ;
+  void reset_collapsing_data();
   void set_original_vf(const Eigen::MatrixXd& V, const Eigen::MatrixXi& F);
   bool collapse_shape_edges(float collapse_percentage);
   void decimate_edges();

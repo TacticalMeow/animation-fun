@@ -1165,11 +1165,11 @@ IGL_INLINE void min_edge_qslim(
     Eigen::RowVectorXd& p,
     std::vector<Eigen::Matrix4d>& Qs)
 {
-    Eigen::Matrix4d q1andq2 = (Qs.at(E(e, 0)) + Qs.at(E(e, 1)));
-    q1andq2.row(3) = Eigen::RowVector4d(0, 0, 0, 1);
-    p = q1andq2.inverse() * Eigen::Vector4d(0, 0, 0, 1);
-    if (q1andq2.determinant() != 0) {
-        p = q1andq2.inverse() * Eigen::Vector4d(0, 0, 0, 1);
+    Eigen::Matrix4d q1plusq2 = (Qs.at(E(e, 0)) + Qs.at(E(e, 1)));
+    q1plusq2.row(3) = Eigen::RowVector4d(0, 0, 0, 1);
+    p = q1plusq2.inverse() * Eigen::Vector4d(0, 0, 0, 1);
+    if (q1plusq2.determinant() != 0) {
+        p = q1plusq2.inverse() * Eigen::Vector4d(0, 0, 0, 1);
     }
     else {
         p = 0.5 * (V.row(E(e, 0)) + V.row(E(e, 1)));
@@ -1191,12 +1191,10 @@ void igl::opengl::ViewerData::set_original_vf(const Eigen::MatrixXd& V, const Ei
 {
     OF = Eigen::MatrixXi(F);
     OV = Eigen::MatrixXd(V);
-    F_alt = Eigen::MatrixXi(F);
-    V_alt = Eigen::MatrixXd(V);
 }
 
 // Function to reset original mesh and data structures
-void igl::opengl::ViewerData::reset_collapsing_data(bool first_time)
+void igl::opengl::ViewerData::reset_collapsing_data()
 {
     // Initialize each vertex quadric to zeros
     quads.clear();
@@ -1205,16 +1203,16 @@ void igl::opengl::ViewerData::reset_collapsing_data(bool first_time)
     for (int v = 0; v < quads.size(); v++)
     {
         quads[v] = Eigen::Matrix4d::Zero();
-    }
+    };
     EQ.clear();
     EQ.resize(E.rows());
     Q.clear();
-    edge_flaps(OF, E, EMAP, EF, EI);
+    edge_flaps(F, E, EMAP, EF, EI);
     C.resize(E.rows(), V.cols() + 1);
 
     for (int f = 0; f < F.rows(); f++) {
         for (int e = 0; e < 3; e++) {
-            Eigen::Vector3d v = Eigen::Vector3d(OV(OF(f, e), 0), OV(OF(f, e), 1), OV(OF(f, e), 2));
+            Eigen::Vector3d v = Eigen::Vector3d(V(F(f, e), 0), V(F(f, e), 1), V(F(f, e), 2));
             Eigen::Vector3d abc = F_normals.row(f).normalized();
             Eigen::MatrixXd res = kpCalculator(abc, v);
             quads.at(F(f, e)) += res;
@@ -1225,21 +1223,12 @@ void igl::opengl::ViewerData::reset_collapsing_data(bool first_time)
     {
         double cost = e;
         Eigen::RowVectorXd p(1, 3);
-        min_edge_qslim(e, OV, OF, E, EMAP, EF, EI, cost, p, quads);
+        min_edge_qslim(e, V, F, E, EMAP, EF, EI, cost, p, quads);
         C.row(e) = p;
         EQ.push_back(Q.insert(std::pair<double, int>(cost, e)).first);
     }
 
     num_collapsed = 0;
-    if (!first_time)
-    {
-        clear();
-        set_mesh(OV, OF);
-        V_alt = OV;
-        F_alt = OF;
-        set_face_based(true);
-        dirty = 157;
-    }
 }
 
 void igl::opengl::ViewerData::plus(const Quadric& a, const Quadric& b, Quadric& c)
@@ -1263,7 +1252,7 @@ bool igl::opengl::ViewerData::collapse_shape_edges(float collapse_percentage)
         const int max_iter = std::ceil(collapse_percentage * Q.size());
         for (int j = 0; j < max_iter; j++)
         {
-            if (!our_qslim_collapse(min_edge_qslim, V_alt, F_alt, E, EMAP, EF, EI, Q, EQ, C, quads))
+            if (!our_qslim_collapse(min_edge_qslim, OV, OF, E, EMAP, EF, EI, Q, this->EQ, C, quads))
             {
                 break;
             }
@@ -1274,9 +1263,9 @@ bool igl::opengl::ViewerData::collapse_shape_edges(float collapse_percentage)
         if (something_collapsed)
         {
             clear();
-            set_mesh(V_alt, F_alt);
-            //set_face_based(true);
-            //dirty = 157;
+            set_mesh(OV, OF);
+            set_face_based(true);
+            dirty = 157;
         }
     }
     return false;
