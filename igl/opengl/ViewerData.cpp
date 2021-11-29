@@ -1259,7 +1259,7 @@ bool igl::opengl::ViewerData::collapse_shape_edges(float collapse_percentage)
             something_collapsed = true;
             num_collapsed++;
         }
-
+		printf("Collapsed %d\n,num_collapsed);
         if (something_collapsed)
         {
             clear();
