@@ -173,15 +173,15 @@ public:
   Eigen::MatrixXi F_uv; // optional faces for UVs
 
   //Structures for edge decimation (Eden Mansdorf).
-  Eigen::MatrixXd OV;
-  Eigen::MatrixXi OF;
+  Eigen::MatrixXd OV,V_alt;
+  Eigen::MatrixXi OF,F_alt;
   Eigen::VectorXi EMAP;
   Eigen::MatrixXi E, EF, EI;
   int v1, v2;
   // Quadrics per vertex
   typedef std::tuple<Eigen::MatrixXd, Eigen::RowVectorXd, double> Quadric;
   std::vector<Quadric> quadrics;
-
+  std::vector<Eigen::Matrix4d> quads;
 
 
   // If an edge were collapsed, we'd collapse it to these points:
@@ -193,8 +193,8 @@ public:
   void set_original_vf(const Eigen::MatrixXd& V, const Eigen::MatrixXi& F);
   bool collapse_shape_edges(float collapse_percentage);
   void decimate_edges();
-  void plus(const Quadric& a, const Quadric& b, Quadric& c);
-
+  Eigen::Matrix4d kpCalculator(Eigen::Vector3d abc, Eigen::Vector3d v);
+  static void plus(const Quadric& a, const Quadric& b, Quadric& c);
 
 
   // Texture
