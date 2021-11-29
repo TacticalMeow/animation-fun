@@ -178,10 +178,10 @@ static void glfw_key_callback(GLFWwindow* window, int key, int scancode, int act
 			rndr->TranslateCamera(Eigen::Vector3f(0.01f, 0, 0));
 			break;
 		case ' ':
-			rndr->GetScene()->isActive = true;
+			scn->data().collapse_shape_edges(0.05f);
 			break;
 		case GLFW_KEY_R:
-			rndr->GetScene()->data().reset_collapsing_data(false);
+			//rndr->GetScene()->data().reset_collapsing_data(false);
 		default: 
 			Eigen::Vector3f shift;
 			float scale;
